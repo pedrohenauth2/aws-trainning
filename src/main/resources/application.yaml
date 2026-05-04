@@ -9,3 +9,7 @@ aws:
   credentials:
     access-key: test
     secret-key: test
+  sns:
+    topic-arn: arn:aws:sns:us-east-1:000000000000:aws-trainning
+  sqs:
+    queue-url: http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/aws-trainning-queue
