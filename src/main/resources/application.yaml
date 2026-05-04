@@ -1,3 +1,11 @@
 spring:
   application:
     name: AWS-TRAINING
+
+aws:
+  localstack:
+    endpoint: http://localhost:4566
+  region: us-east-1
+  credentials:
+    access-key: test
+    secret-key: test

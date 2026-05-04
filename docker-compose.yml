@@ -1,0 +1,18 @@
+services:
+  localstack:
+    image: localstack/localstack-pro:latest
+    container_name: localstack
+    ports:
+      - "4566:4566"
+      - "4510-4559:4510-4559"
+    environment:
+      - LOCALSTACK_AUTH_TOKEN=ls-LoJi3171-NiYA-kEQe-6394-gUnOdukA7572
+      - SERVICES=s3,sqs,sns,dynamodb,lambda,iam,ec2,cloudformation,secretsmanager,ssm
+      - DEBUG=0
+      - AWS_DEFAULT_REGION=us-east-1
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "localstack-data:/var/lib/localstack"
+
+volumes:
+  localstack-data:
