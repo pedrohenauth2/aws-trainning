@@ -2,13 +2,15 @@ package aws.training.AWS_TRAINING.dynamodb.controller;
 
 import aws.training.AWS_TRAINING.dynamodb.model.Pedido;
 import aws.training.AWS_TRAINING.dynamodb.service.PedidoService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Pedidos - DynamoDB")
 @RestController
-@RequestMapping("/pedidos")
+@RequestMapping("/pedidos/dynamoDB")
 public class PedidoController {
 
     private final PedidoService pedidoService;

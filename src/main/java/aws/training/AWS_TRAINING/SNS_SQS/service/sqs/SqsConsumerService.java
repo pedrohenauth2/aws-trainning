@@ -23,7 +23,7 @@ public class SqsConsumerService {
     }
 
     // Executa a cada 5 segundos verificando se há mensagens na fila
-    @Scheduled(fixedDelay = 5000)
+    //@Scheduled(fixedDelay = 5000) TODO -> Habilitar para consumir SQS
     public void consume() {
         ReceiveMessageRequest request = ReceiveMessageRequest.builder()
                 .queueUrl(queueUrl)
