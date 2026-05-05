@@ -1,12 +1,19 @@
-package aws.training.AWS_TRAINING.dynamodb.controller;
-
-import aws.training.AWS_TRAINING.dynamodb.model.Pedido;
-import aws.training.AWS_TRAINING.dynamodb.service.PedidoService;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+package aws.training.AWS_TRAINING.DynamoDB.controller;
 
 import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import aws.training.AWS_TRAINING.DynamoDB.model.Pedido;
+import aws.training.AWS_TRAINING.DynamoDB.service.PedidoService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 @Tag(name = "Pedidos - DynamoDB")
 @RestController

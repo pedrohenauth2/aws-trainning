@@ -1,14 +1,15 @@
-package aws.training.AWS_TRAINING.dynamodb.repository;
+package aws.training.AWS_TRAINING.DynamoDB.repository;
 
-import aws.training.AWS_TRAINING.dynamodb.model.Pedido;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Repository;
+
+import aws.training.AWS_TRAINING.DynamoDB.model.Pedido;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
 import software.amazon.awssdk.enhanced.dynamodb.Key;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class PedidoRepository {

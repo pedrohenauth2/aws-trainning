@@ -1,11 +1,13 @@
-package aws.training.AWS_TRAINING.SNS_SQS;
+package aws.training.AWS_TRAINING.SNS_SQS.controller;
 
-import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import aws.training.AWS_TRAINING.SNS_SQS.service.sns.SnsPublisherService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 @Tag(name = "SNS")
 @RestController

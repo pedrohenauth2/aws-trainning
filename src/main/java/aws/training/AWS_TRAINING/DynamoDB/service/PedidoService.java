@@ -1,7 +1,7 @@
-package aws.training.AWS_TRAINING.dynamodb.service;
+package aws.training.AWS_TRAINING.DynamoDB.service;
 
-import aws.training.AWS_TRAINING.dynamodb.model.Pedido;
-import aws.training.AWS_TRAINING.dynamodb.repository.PedidoRepository;
+import aws.training.AWS_TRAINING.DynamoDB.model.Pedido;
+import aws.training.AWS_TRAINING.DynamoDB.repository.PedidoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

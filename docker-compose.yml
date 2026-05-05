@@ -13,6 +13,7 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "localstack-data:/var/lib/localstack"
+      - "./localstack-init:/etc/localstack/init/ready.d"
 
 volumes:
   localstack-data:

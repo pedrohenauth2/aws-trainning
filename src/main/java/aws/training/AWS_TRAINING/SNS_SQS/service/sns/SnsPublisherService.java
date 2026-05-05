@@ -1,7 +1,8 @@
-package aws.training.AWS_TRAINING.SNS_SQS;
+package aws.training.AWS_TRAINING.SNS_SQS.service.sns;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.PublishRequest;
 import software.amazon.awssdk.services.sns.model.PublishResponse;
