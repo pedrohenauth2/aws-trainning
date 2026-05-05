@@ -7,7 +7,7 @@ services:
       - "4510-4559:4510-4559"
     environment:
       - LOCALSTACK_AUTH_TOKEN=ls-LoJi3171-NiYA-kEQe-6394-gUnOdukA7572
-      - SERVICES=s3,sqs,sns,dynamodb,lambda,iam,ec2,cloudformation,secretsmanager,ssm
+      - SERVICES=s3,sqs,sns,dynamodb,lambda,iam,ec2,cloudformation,secretsmanager,ssm,apigateway
       - DEBUG=0
       - AWS_DEFAULT_REGION=us-east-1
     volumes:
